@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+::selection{
+  color: #000;
+  background: #fff;
+}
+nav{
+  position: fixed;
+  background: #1b1b1b;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu{
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu .logo a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.menu ul{
+  display: inline-flex;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child{
+  margin-left: 0px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover{
+  background: #fff;
+  color: black;
+}
+.img{
+  background: url('img3.jpg') no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.center{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.center .title{
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+}
+.center .sub_title{
+  color: #fff;
+  font-size: 52px;
+  font-weight: 600;
+}
+.center .btns{
+  margin-top: 20px;
+}
+.center .btns button{
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.center .btns button:first-child{
+  color: #fff;
+  background: none;
+}
+.btns button:first-child:hover{
+  background: white;
+  color: black;
+}
+.center .btns button:last-child{
+  background: white;
+  color: black;
+}
+form {
+  padding: 25px;
+  background: #fff;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 7px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+}
+form h2 {
+  font-size: 27px;
+  text-align: center;
+  margin: 0px 0 30px;
+}
+form .form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+form label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+form input,
+form select {
+  height: 45px;
+  padding: 10px;
+  width: 100%;
+  font-size: 15px;
+  outline: none;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #bfbfbf;
+}
+form input:focus,
+form select:focus {
+  border-color: #9a9a9a;
+}
+form input.error,
+form select.error {
+  border-color: #f91919;
+  background: #f9f0f1;
+}
+form small {
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+  color: #f91919;
+}
+form .password i {
+  position: absolute;
+  right: 0px;
+  height: 45px;
+  top: 28px;
+  font-size: 13px;
+  line-height: 45px;
+  width: 45px;
+  cursor: pointer;
+  color: #939393;
+  text-align: center;
+}
+.submit-btn {
+  margin-top: 30px;
+}
+.submit-btn input {
+  color: white;
+  border: none;
+  height: auto;
+  font-size: 16px;
+  padding: 13px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: center;
+  background: #1BB295;
+  transition: 0.2s ease;
+}
+.submit-btn input:hover {
+  background: #179b81;
+}
