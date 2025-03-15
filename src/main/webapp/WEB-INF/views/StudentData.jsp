@@ -29,8 +29,8 @@
   <div class="center">
     <h2>Student Data</h2>
     <div>
-    <table style="margin-left: 13%;width: 77%;">
-      <tr><th>ID</th><th>Name</th><th>MailId</th><th>Department</th><th>DateOfBirth</th><th>Gender</th><th>EditAction</th><th>DeleteAction</th></tr>
+    <table style="margin-left: 13%;width: 77%;     background: white;" >
+      <tr style="background-color: #972a27;color: #FFFFFF;"><th >ID</th><th>Name</th><th>MailId</th><th>Department</th><th>DateOfBirth</th><th>Gender</th><th>EditAction</th><th>DeleteAction</th></tr>
       <c:forEach var="student" items="${list}">
           <tr>
               <td>${student.id}</td>

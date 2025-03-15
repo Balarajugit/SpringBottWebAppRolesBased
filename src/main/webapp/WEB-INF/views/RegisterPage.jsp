@@ -16,6 +16,7 @@
     <div class="title">Registration</div>
     <div class="content">
       <!-- Registration form -->
+       <div>
       <form action="resgister" method="post"  modelAttribute="userdata">
         <div class="user-details">
           <!-- Input for Full Name -->
@@ -92,6 +93,7 @@
         </div>
         <div class="signIn-link">Already have an Account? <a href="/login">SigIn now</a></div>
       </form>
+    </div>
       <div style="text-align: center; color: red;">${res}</div>
     </div>
   </div>
